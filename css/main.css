@@ -1,3 +1,7 @@
+ul {
+  list-style-type: none;
+}
+
 .button {
   color: var(--color-primary-white);
   background-color: var(--color-primary-light-blue);
@@ -9,6 +13,26 @@
 .button:hover {
   color: var(--color-primary-dark-blue);
   background-color: transparent;
+}
+
+.link {
+  color: var(--color-primary-dark-blue);
+}
+
+.link:hover {
+  color: var(--color-primary-light-blue);
+}
+
+.logo-link {
+  color: var(--color-primary-light-blue);
+}
+
+.hero-section__title {
+  color: var(--color-primary-light-blue);
+}
+
+.rebuilt-section__accent {
+  font-weight: 600;
 }
 
 :root {
