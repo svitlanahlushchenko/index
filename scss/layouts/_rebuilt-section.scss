@@ -1,9 +1,16 @@
 .rebuilt-section {
+  &__title {
+    font-size: 64px;
+  }
   &__title-accent {
     color: var(--color-primary-light-blue);
     text-transform: capitalize;
   }
-  &__accent {
+
+  &__text {
+    font-size: 22px;
+  }
+  &__text-accent {
     font-weight: 600;
     text-transform: capitalize;
   }

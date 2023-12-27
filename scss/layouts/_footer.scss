@@ -5,9 +5,15 @@
   &__address-link {
     color: var(--color-primary-white);
     text-decoration: none;
+    font-size: 16px;
   }
   &__logo-link {
     color: var(--color-primary-light-blue);
     text-decoration: none;
+    font-size: 24px;
+  }
+  &__data-protect {
+    color: var(--color-secondary-light-grey);
+    font-size: 13px;
   }
 }
