@@ -1,0 +1,9 @@
+.contact-section {
+  &__title {
+    text-align: center;
+  }
+
+  &__title-accent {
+    color: var(--color-primary-light-blue);
+  }
+}

@@ -4,33 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
       <nav class="header__nav">
-        <a class="logo-link" href="#">beauty zone</a>
+        <a class="header__logo-link" href="#">beauty zone</a>
         <ul class="header__menu">
-          <li><a class="link" href="#rebuilt-section">Про нас</a></li>
-          <li><a class="link" href="#advantages-section">Чому ми</a></li>
-          <li><a class="link" href="#advantages-section">Наші процедури</a></li>
-          <li><a class="link" href="#procedure-section">Контакти</a></li>
+          <li><a class="header__link" href="#rebuilt-section">Про нас</a></li>
+          <li>
+            <a class="header__link" href="#advantages-section">Чому ми</a>
+          </li>
+          <li>
+            <a class="header__link" href="#advantages-section"
+              >Наші процедури</a
+            >
+          </li>
+          <li>
+            <a class="header__link" href="#procedure-section">Контакти</a>
+          </li>
         </ul>
         <ul>
           <li>
-            <a href="#"
-              ><img src="./images/telephone.svg" alt="telephone-icon"
-            /></a>
+            <a href="#">telephone-icon</a>
           </li>
           <li>
-            <a href="#"
-              ><img src="./images/facebook.svg" alt="facebook-icon"
-            /></a>
+            <a href="#">facebook-icon</a>
           </li>
           <li>
-            <a href="#"
-              ><img src="./images/instagram.svg" alt="instagram-icon"
-            /></a>
+            <a href="#">instagram-icon</a>
           </li>
         </ul>
       </nav>
@@ -44,7 +52,10 @@
         <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
       </section>
       <section class="rebuilt-section" id="rebuilt-section">
-        <h2>Перевтілюйтесь в beauty zone!</h2>
+        <h2 class="rebuilt-section__title">
+          Перевтілюйтесь в
+          <span class="rebuilt-section__title-accent">beauty zone!</span>
+        </h2>
         <p>
           Наша косметологічна клініка пропонує вам професійні послуги з догляду
           за шкірою обличчя та тіла.
@@ -57,7 +68,10 @@
         </p>
       </section>
       <section class="advantages-section" id="advantages-section">
-        <h2 class="advantages-section__title">Чому люди обирають нас</h2>
+        <h2 class="advantages-section__title">
+          Чому люди
+          <span class="advantages-section__title-accent">обирають нас</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -86,7 +100,9 @@
         </ul>
       </section>
       <section class="procedure-section" id="procedure-section">
-        <h2 class="procedure-section__title">Наші процедури</h2>
+        <h2 class="procedure-section__title">
+          Наші <span class="procedure-section__title-accent">процедури</span>
+        </h2>
         <ul>
           <li>
             <article><h3>Маски для обличч</h3></article>
@@ -100,7 +116,9 @@
         </ul>
       </section>
       <section class="contact-section" id="contact-section">
-        <h2 class="contact-section__title">Як нас знайти</h2>
+        <h2 class="contact-section__title">
+          Як нас <span class="contact-section__title-accent">знайти</span>
+        </h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325734713493!2d30.515600376297108!3d50.44235657159065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2ssk!4v1703528954611!5m2!1sru!2ssk"
           width="605"
@@ -112,42 +130,53 @@
       </section>
     </main>
 
-    <footer>
-      <nav class="header__nav">
-        <a class="logo-link" href="#">beauty zone</a>
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a class="footer__logo-link" href="#">beauty zone</a>
 
-        <ul class="header__menu">
-          <li><a class="link" href="#rebuilt-section">Про нас</a></li>
-          <li><a class="link" href="#advantages-section">Чому ми</a></li>
-          <li><a class="link" href="#advantages-section">Наші процедури</a></li>
-          <li><a class="link" href="#procedure-section">Контакти</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul>
-          <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+        <ul class="footer__menu">
+          <li><a class="footer__link" href="#rebuilt-section">Про нас</a></li>
           <li>
-            <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+            <a class="footer__link" href="#advantages-section">Чому ми</a>
           </li>
           <li>
-            <a href="https://maps.app.goo.gl/ABW7EWCMFvdTqfb99" target="_blank"
+            <a class="footer__link" href="#advantages-section"
+              >Наші процедури</a
+            >
+          </li>
+          <li>
+            <a class="footer__link" href="#procedure-section">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="footer__address">
+        <ul>
+          <li>
+            <a class="footer__address-link" href="tel:+380960000007"
+              >+ 38 (096) 000 00 07</a
+            >
+          </li>
+          <li>
+            <a class="footer__address-link" href="mailto:beautyzone@gmail.com"
+              >beautyzone@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="footer__address-link"
+              href="https://maps.app.goo.gl/ABW7EWCMFvdTqfb99"
+              target="_blank"
               >Україна, м. Київ, вул. Тараса Шевченка 5</a
             >
           </li>
           <li>
-            <a href="#"
-              ><img src="./images/telephone.svg" alt="telephone-icon"
-            /></a>
+            <a class="footer__socials-icon" href="#">telephone-icon</a>
           </li>
           <li>
-            <a href="#"
-              ><img src="./images/facebook.svg" alt="facebook-icon"
-            /></a>
+            <a class="footer__socials-icon" href="#">facebook-icon</a>
           </li>
           <li>
-            <a href="#"
-              ><img src="./images/instagram.svg" alt="instagram-icon"
-            /></a>
+            <a class="footer__socials-icon" href="#">instagram-icon</a>
           </li>
         </ul>
         <a href="#" target="_blank">Політика конфіденційності</a>

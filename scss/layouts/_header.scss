@@ -1,0 +1,15 @@
+.header {
+  &__link {
+    color: var(--color-primary-dark-blue);
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: var(--color-primary-light-blue);
+  }
+
+  &__logo-link {
+    color: var(--color-primary-light-blue);
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,13 @@
+.footer {
+  background-color: var(--color-primary-dark-blue);
+
+  &__link,
+  &__address-link {
+    color: var(--color-primary-white);
+    text-decoration: none;
+  }
+  &__logo-link {
+    color: var(--color-primary-light-blue);
+    text-decoration: none;
+  }
+}

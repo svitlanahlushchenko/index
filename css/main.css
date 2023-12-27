@@ -2,6 +2,11 @@ ul {
   list-style-type: none;
 }
 
+body {
+  color: var(--color-primary-dark-blue);
+  font-family: "Roboto", "Play", sans-serif;
+}
+
 .button {
   color: var(--color-primary-white);
   background-color: var(--color-primary-light-blue);
@@ -15,24 +20,64 @@ ul {
   background-color: transparent;
 }
 
-.link {
+.advantages-section__title {
+  text-align: center;
+}
+.advantages-section__title-accent {
+  color: var(--color-primary-light-blue);
+}
+
+.contact-section__title {
+  text-align: center;
+}
+.contact-section__title-accent {
+  color: var(--color-primary-light-blue);
+}
+
+.footer {
+  background-color: var(--color-primary-dark-blue);
+}
+.footer__link, .footer__address-link {
+  color: var(--color-primary-white);
+  text-decoration: none;
+}
+.footer__logo-link {
+  color: var(--color-primary-light-blue);
+  text-decoration: none;
+}
+
+.header__link {
   color: var(--color-primary-dark-blue);
+  text-decoration: none;
 }
-
-.link:hover {
+.header__link:hover {
   color: var(--color-primary-light-blue);
 }
-
-.logo-link {
+.header__logo-link {
   color: var(--color-primary-light-blue);
+  text-decoration: none;
 }
 
 .hero-section__title {
   color: var(--color-primary-light-blue);
+  text-transform: capitalize;
 }
 
+.procedure-section__title {
+  text-align: center;
+}
+.procedure-section__title-accent {
+  color: var(--color-primary-light-blue);
+  text-transform: capitalize;
+}
+
+.rebuilt-section__title-accent {
+  color: var(--color-primary-light-blue);
+  text-transform: capitalize;
+}
 .rebuilt-section__accent {
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 :root {
