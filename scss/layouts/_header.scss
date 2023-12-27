@@ -6,11 +6,15 @@
 
   &__link:hover {
     color: var(--color-primary-light-blue);
+    font-weight: 700;
   }
 
   &__logo-link {
     color: var(--color-primary-light-blue);
     text-decoration: none;
+    font-family: Play;
     font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
   }
 }

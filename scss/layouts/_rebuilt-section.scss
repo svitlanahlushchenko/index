@@ -1,6 +1,9 @@
 .rebuilt-section {
   &__title {
+    font-family: Play;
+
     font-size: 64px;
+    font-weight: 700;
   }
   &__title-accent {
     color: var(--color-primary-light-blue);
@@ -11,7 +14,6 @@
     font-size: 22px;
   }
   &__text-accent {
-    font-weight: 600;
     text-transform: capitalize;
   }
 }
