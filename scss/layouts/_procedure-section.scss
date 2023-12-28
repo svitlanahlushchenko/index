@@ -11,6 +11,9 @@
     text-transform: capitalize;
   }
   &__menu {
+    display: flex;
+    gap: 16px;
     font-size: 22px;
+    line-height: 1.2;
   }
 }

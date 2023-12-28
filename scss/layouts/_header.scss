@@ -1,14 +1,26 @@
 .header {
-  &__link {
-    color: var(--color-primary-dark-blue);
-    text-decoration: none;
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
   }
-
-  &__link:hover {
-    color: var(--color-primary-light-blue);
-    font-weight: 700;
+  &__nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 40px;
   }
-
+  &__menu {
+    display: flex;
+    gap: 56px;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  &__contacts {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+  }
   &__logo-link {
     color: var(--color-primary-light-blue);
     text-decoration: none;
@@ -16,5 +28,14 @@
     font-size: 22px;
     font-weight: 700;
     text-transform: capitalize;
+    line-height: 0.95;
+  }
+  &__link {
+    color: var(--color-primary-dark-blue);
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: var(--color-primary-light-blue);
   }
 }

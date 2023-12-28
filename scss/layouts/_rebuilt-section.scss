@@ -1,4 +1,8 @@
 .rebuilt-section {
+  &__container {
+    display: flex;
+  }
+
   &__title {
     font-family: Play;
 
@@ -12,8 +16,14 @@
 
   &__text {
     font-size: 22px;
+    line-height: 1.7;
+    max-width: 709px;
   }
   &__text-accent {
     text-transform: capitalize;
+  }
+
+  &__photo {
+    border-radius: 50%;
   }
 }

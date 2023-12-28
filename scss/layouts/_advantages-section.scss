@@ -1,4 +1,5 @@
 .advantages-section {
+  background-color: aqua;
   &__title {
     font-family: Play;
     font-size: 64px;
@@ -8,5 +9,15 @@
 
   &__title-accent {
     color: var(--color-primary-light-blue);
+  }
+
+  &__menu {
+    line-height: 1.3;
+    display: flex;
+    gap: 56px;
+  }
+  &__item {
+    background-color: var(--color-primary-white);
+    border-radius: 32px;
   }
 }
