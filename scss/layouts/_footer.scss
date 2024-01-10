@@ -1,14 +1,33 @@
 .footer {
   background-color: var(--color-primary-dark-blue);
+  background-image: url('../../images/footer-background.png');
 
-  &__logo-link {
-    color: var(--color-primary-light-blue);
-    text-decoration: none;
-    font-size: 24px;
-    font-family: Play;
-    font-weight: 700;
-    line-height: 0.9;
+  &__container {
+    display: flex;
   }
+
+  &__nav {
+    flex-basis: 50%;
+    display: flex;
+  }
+  &__logo-link {
+    flex-basis: 50%;
+  }
+  &__menu {
+    flex-basis: 50%;
+  }
+
+  &__address {
+    flex-basis: 50%;
+    display: flex;
+  }
+  &__contacts {
+    flex-basis: 50%;
+  }
+  &__address-info {
+    flex-basis: 50%;
+  }
+
   &__link,
   &__address-link {
     color: var(--color-primary-white);
@@ -21,5 +40,9 @@
     color: var(--color-secondary-light-grey);
     font-size: 13px;
     font-style: normal;
+  }
+  &__socials-icon {
+    fill: var(--color-primary-white);
+    background-color: transparent;
   }
 }

@@ -42,9 +42,6 @@ p {
   background-color: transparent;
 }
 
-.advantages-section {
-  background-color: aqua;
-}
 .advantages-section__title {
   font-family: Play;
   font-size: 64px;
@@ -85,14 +82,42 @@ p {
 
 .footer {
   background-color: var(--color-primary-dark-blue);
+  background-image: url("../../images/footer-background.png");
+}
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__nav {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .footer__logo-link {
-  color: var(--color-primary-light-blue);
-  text-decoration: none;
-  font-size: 24px;
-  font-family: Play;
-  font-weight: 700;
-  line-height: 0.9;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.footer__menu {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.footer__address {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.footer__address-info {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 .footer__link, .footer__address-link {
   color: var(--color-primary-white);
@@ -104,6 +129,10 @@ p {
   color: var(--color-secondary-light-grey);
   font-size: 13px;
   font-style: normal;
+}
+.footer__socials-icon {
+  fill: var(--color-primary-white);
+  background-color: transparent;
 }
 
 .header__container {
@@ -147,15 +176,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.header__logo-link {
-  color: var(--color-primary-light-blue);
-  text-decoration: none;
-  font-family: Play;
-  font-size: 22px;
-  font-weight: 700;
-  text-transform: capitalize;
-  line-height: 0.95;
+  fill: var(--color-primary-dark-blue);
 }
 .header__link {
   color: var(--color-primary-dark-blue);
@@ -165,6 +186,9 @@ p {
   color: var(--color-primary-light-blue);
 }
 
+.hero-section {
+  background-image: url("../../images/hero-photo.png");
+}
 .hero-section__title {
   color: var(--color-primary-light-blue);
   text-transform: capitalize;
@@ -195,6 +219,28 @@ p {
   gap: 16px;
   font-size: 22px;
   line-height: 1.2;
+}
+.procedure-section__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  fill: var(--color-primary-dark-blue);
+  cursor: pointer;
+}
+.procedure-section__button:hover {
+  background-color: var(--color-primary-light-blue);
+  fill: var(--color-primary-white);
 }
 
 .rebuilt-section__container {
