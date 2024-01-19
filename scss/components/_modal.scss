@@ -1,0 +1,31 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(1, 31, 74, 0.4);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 720px;
+  height: 680px;
+  background-image: url('../../images/footer-background.png');
+  background-color: var(--color-primary-dark-blue);
+  border-radius: 48px;
+
+  &__btn-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+  }
+}

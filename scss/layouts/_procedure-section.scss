@@ -1,4 +1,9 @@
 .procedure-section {
+  padding-top: 96px;
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
   &__title {
     text-align: center;
     font-size: 64px;
@@ -16,21 +21,7 @@
     font-size: 22px;
     line-height: 1.2;
   }
-
-  &__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    padding: 0;
-    background-color: transparent;
-    border-radius: 50%;
-    fill: var(--color-primary-dark-blue);
-    cursor: pointer;
-  }
-  &__button:hover {
-    background-color: var(--color-primary-light-blue);
-    fill: var(--color-primary-white);
+  &__icon {
+    fill: var(--color-primary-light-blue);
   }
 }

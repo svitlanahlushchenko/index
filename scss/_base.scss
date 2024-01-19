@@ -1,4 +1,6 @@
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -25,4 +27,8 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+a {
+  display: inline-block;
 }

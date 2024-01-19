@@ -1,6 +1,8 @@
 .rebuilt-section {
+  padding-top: 40px;
   &__container {
     display: flex;
+    gap: 28px;
   }
 
   &__title {
@@ -23,7 +25,18 @@
     text-transform: capitalize;
   }
 
+  &__photos {
+    position: relative;
+  }
   &__photo {
     border-radius: 50%;
+  }
+  &__photo:first-child {
+    position: absolute;
+    top: -40px;
+  }
+  &__photo:last-child {
+    position: absolute;
+    bottom: -200px;
   }
 }

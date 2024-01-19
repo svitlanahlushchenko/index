@@ -69,7 +69,9 @@
         <div class="container">
           <p>Косметологічна клініка</p>
           <h1 class="hero-section__title">Beauty Zone</h1>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="modal__btn-open" type="button">
+            Замовити дзвінок
+          </button>
           <p class="hero-section__text">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
@@ -121,6 +123,9 @@
           <ul class="advantages-section__menu">
             <li class="advantages-section__item">
               <article>
+                <svg class="advantages-section__icon" width="48" height="48">
+                  <use href="./images/icons.svg#icon-materials-science"></use>
+                </svg>
                 <p>
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
                   від 5 років
@@ -129,6 +134,9 @@
             </li>
             <li class="advantages-section__item">
               <article>
+                <svg class="advantages-section__icon" width="48" height="48">
+                  <use href="./images/icons.svg#icon-medicine"></use>
+                </svg>
                 <p>
                   Використовуємо тільки професійне обладнання та косметику,
                   перевірену часом
@@ -137,6 +145,9 @@
             </li>
             <li class="advantages-section__item">
               <article>
+                <svg class="advantages-section__icon" width="48" height="48">
+                  <use href="./images/icons.svg#icon-crown"></use>
+                </svg>
                 <p>
                   Наша мета - підкреслити переваги та приховати недоліки, а не
                   переробити
@@ -152,27 +163,29 @@
           <h2 class="procedure-section__title">
             Наші <span class="procedure-section__title-accent">процедури</span>
           </h2>
-          <button class="procedure-section__button" type="button">
-            <svg width="44" height="44">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
-          <ul class="procedure-section__menu">
-            <li>
-              <article><h3>Маски для обличч</h3></article>
-            </li>
-            <li>
-              <article><h3>Ін'єкції для обличчя</h3></article>
-            </li>
-            <li>
-              <article><h3>Очищення обличчя</h3></article>
-            </li>
-          </ul>
-          <button class="procedure-section__button" type="button">
-            <svg width="44" height="44">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
+          <div class="procedure-section__container">
+            <button class="carousel" type="button">
+              <svg width="44" height="44">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="procedure-section__menu">
+              <li>
+                <article><h3>Маски для обличч</h3></article>
+              </li>
+              <li>
+                <article><h3>Ін'єкції для обличчя</h3></article>
+              </li>
+              <li>
+                <article><h3>Очищення обличчя</h3></article>
+              </li>
+            </ul>
+            <button class="carousel" type="button">
+              <svg width="44" height="44">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -197,9 +210,9 @@
       <div class="container">
         <div class="footer__container">
           <nav class="footer__nav">
-            <a class="footer__logo-link" href="#"
-              ><img src="./images/logo.svg" alt=""
-            /></a>
+            <div class="footer__logo-link">
+              <a href="#"><img src="./images/logo.svg" alt="" /></a>
+            </div>
 
             <ul class="footer__menu">
               <li>
@@ -273,5 +286,13 @@
         </div>
       </div>
     </footer>
+
+    <!--<div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal__btn-close">Close</button>
+      </div>
+    </div>-->
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

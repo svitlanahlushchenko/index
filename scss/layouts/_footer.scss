@@ -1,14 +1,18 @@
 .footer {
+  padding-top: 94px;
+  padding: 56px 0;
   background-color: var(--color-primary-dark-blue);
   background-image: url('../../images/footer-background.png');
 
   &__container {
     display: flex;
+    gap: 20px;
   }
 
   &__nav {
     flex-basis: 50%;
     display: flex;
+    gap: 20px;
   }
   &__logo-link {
     flex-basis: 50%;
@@ -20,6 +24,7 @@
   &__address {
     flex-basis: 50%;
     display: flex;
+    gap: 20px;
   }
   &__contacts {
     flex-basis: 50%;

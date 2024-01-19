@@ -1,6 +1,8 @@
 .hero-section {
-  background-image: url('../../images/hero-photo.png');
-
+  background-image: url('../../images/hero-photo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   &__title {
     color: var(--color-primary-light-blue);
     text-transform: capitalize;
