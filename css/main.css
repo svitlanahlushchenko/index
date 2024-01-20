@@ -181,7 +181,7 @@ a {
 .footer {
   margin-top: 94px;
   position: relative;
-  padding: 56px 0;
+  padding-top: 56px;
   background-color: var(--color-primary-dark-blue);
   background-image: url("../../images/footer-background.png");
   background-repeat: no-repeat;
@@ -195,14 +195,15 @@ a {
   background-repeat: no-repeat;
   content: "";
   background-image: url("../../images/bottles-photo.png");
-  width: 278px;
-  height: 213px;
+  width: 247px;
+  height: 152px;
 }
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  padding-bottom: 56px;
 }
 .footer__nav {
   -ms-flex-preferred-size: 50%;
@@ -264,6 +265,9 @@ a {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 .header__container {
   display: -webkit-box;
@@ -320,7 +324,7 @@ a {
 .hero-section {
   background-image: linear-gradient(89deg, #fff 30.62%, rgba(255, 255, 255, 0.85) 41.31%, rgba(255, 255, 255, 0.19) 58.65%, rgba(255, 255, 255, 0) 72.78%), url("../../images/hero-photo.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: right top;
   background-size: cover;
 }
 .hero-section__title {
@@ -405,6 +409,7 @@ a {
   color: var(--color-primary-white);
   text-align: center;
   font-size: 22px;
+  font-style: normal;
   line-height: 1.2;
 }
 

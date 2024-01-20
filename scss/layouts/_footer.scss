@@ -1,7 +1,7 @@
 .footer {
   margin-top: 94px;
   position: relative;
-  padding: 56px 0;
+  padding-top: 56px;
   background-color: var(--color-primary-dark-blue);
   background-image: url('../../images/footer-background.png');
   background-repeat: no-repeat;
@@ -15,12 +15,13 @@
     background-repeat: no-repeat;
     content: '';
     background-image: url('../../images/bottles-photo.png');
-    width: 278px;
-    height: 213px;
+    width: 247px;
+    height: 152px;
   }
   &__container {
     display: flex;
     gap: 20px;
+    padding-bottom: 56px;
   }
 
   &__nav {
