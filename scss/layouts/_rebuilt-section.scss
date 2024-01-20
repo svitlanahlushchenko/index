@@ -1,5 +1,5 @@
 .rebuilt-section {
-  padding-top: 40px;
+  margin-top: 40px;
   &__container {
     display: flex;
     gap: 28px;
@@ -28,15 +28,29 @@
   &__photos {
     position: relative;
   }
-  &__photo {
-    border-radius: 50%;
-  }
-  &__photo:first-child {
+
+  &__photo-before {
     position: absolute;
     top: -40px;
+    border-radius: 50%;
   }
-  &__photo:last-child {
+  &__photo-after {
     position: absolute;
-    bottom: -200px;
+    top: 335px;
+    border-radius: 50%;
+  }
+
+  &__star {
+    position: absolute;
+  }
+  &__star-first {
+    transform: rotate(30deg);
+    fill: var(--color-primary-light-blue);
+    transform: translateX(470px);
+  }
+  &__star-second {
+    transform: rotate(-30deg);
+    fill: var(--color-primary-dark-blue);
+    transform: translateY(300px);
   }
 }

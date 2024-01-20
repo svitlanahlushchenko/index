@@ -2,6 +2,7 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,7 +68,7 @@
     <main>
       <section class="hero-section">
         <div class="container">
-          <p>Косметологічна клініка</p>
+          <p class="hero-section__name">Косметологічна клініка</p>
           <h1 class="hero-section__title">Beauty Zone</h1>
           <button class="modal__btn-open" type="button">
             Замовити дзвінок
@@ -100,12 +101,18 @@
             </div>
             <div class="rebuilt-section__photos">
               <img
-                class="rebuilt-section__photo"
+                class="rebuilt-section__photo-before"
                 src="./images/woman-before.jpg"
                 alt="photo wonam before"
               />
+              <svg class="rebuilt-section__star-first" width="40" height="40">
+                <use href="./images/icons.svg#icon-Star"></use>
+              </svg>
+              <svg class="rebuilt-section__star-second" width="64" height="64">
+                <use href="./images/icons.svg#icon-Star"></use>
+              </svg>
               <img
-                class="rebuilt-section__photo"
+                class="rebuilt-section__photo-after"
                 src="./images/woman-after.jpg"
                 alt="photo woman after"
               />
@@ -126,9 +133,9 @@
                 <svg class="advantages-section__icon" width="48" height="48">
                   <use href="./images/icons.svg#icon-materials-science"></use>
                 </svg>
-                <p>
-                  Всі наші косметологи мають вищу медичну освіту та стаж роботи
-                  від 5 років
+                <p class="advantages-section__text">
+                  Всі наші косметологи мають вищу медичну освіту <br />та стаж
+                  роботи від 5 років
                 </p>
               </article>
             </li>
@@ -137,7 +144,7 @@
                 <svg class="advantages-section__icon" width="48" height="48">
                   <use href="./images/icons.svg#icon-medicine"></use>
                 </svg>
-                <p>
+                <p class="advantages-section__text">
                   Використовуємо тільки професійне обладнання та косметику,
                   перевірену часом
                 </p>
@@ -148,7 +155,7 @@
                 <svg class="advantages-section__icon" width="48" height="48">
                   <use href="./images/icons.svg#icon-crown"></use>
                 </svg>
-                <p>
+                <p class="advantages-section__text">
                   Наша мета - підкреслити переваги та приховати недоліки, а не
                   переробити
                 </p>
@@ -163,24 +170,51 @@
           <h2 class="procedure-section__title">
             Наші <span class="procedure-section__title-accent">процедури</span>
           </h2>
-          <div class="procedure-section__container">
-            <button class="carousel" type="button">
+          <div class="procedure-section__slider">
+            <button class="carousel-button" type="button">
               <svg width="44" height="44">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
             <ul class="procedure-section__menu">
               <li>
-                <article><h3>Маски для обличч</h3></article>
+                <article class="procedure-section__item">
+                  <img
+                    class="procedure-section__image"
+                    src="./images/Mask-photo.jpg"
+                    alt="Маски для обличчя"
+                  />
+                  <h3 class="procedure-section__item-title">
+                    Маски для обличчя
+                  </h3>
+                </article>
               </li>
               <li>
-                <article><h3>Ін'єкції для обличчя</h3></article>
+                <article class="procedure-section__item">
+                  <img
+                    class="procedure-section__image"
+                    src="./images/injection-photo.jpg"
+                    alt="Ін'єкції для обличчя"
+                  />
+                  <h3 class="procedure-section__item-title">
+                    Ін'єкції для обличчя
+                  </h3>
+                </article>
               </li>
               <li>
-                <article><h3>Очищення обличчя</h3></article>
+                <article class="procedure-section__item">
+                  <img
+                    class="procedure-section__image"
+                    src="./images/cleaner-photo.jpg"
+                    alt="Очищення обличчя"
+                  />
+                  <h3 class="procedure-section__item-title">
+                    Очищення обличчя
+                  </h3>
+                </article>
               </li>
             </ul>
-            <button class="carousel" type="button">
+            <button class="carousel-button" type="button">
               <svg width="44" height="44">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -254,28 +288,31 @@
                   >Україна, м. Київ, вул. Тараса Шевченка 5</a
                 >
               </li>
-              <li>
-                <a class="footer__socials-icon" href="#">
-                  <svg width="42" height="42">
-                    <use href="./images/icons.svg#icon-telephone"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="footer__socials-icon" href="#"
-                  ><svg width="42" height="42">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="footer__socials-icon" href="#"
-                  ><svg width="42" height="42">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
+              <ul class="footer__social-icons">
+                <li>
+                  <a class="footer__social-icon" href="#">
+                    <svg width="42" height="42">
+                      <use href="./images/icons.svg#icon-telephone"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="footer__social-icon" href="#"
+                    ><svg width="42" height="42">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="footer__social-icon" href="#"
+                    ><svg width="42" height="42">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </ul>
+
             <div class="footer__address-info">
               <a class="footer__address-link" href="#" target="_blank"
                 >Політика конфіденційності</a
@@ -287,11 +324,11 @@
       </div>
     </footer>
 
-    <!--<div class="backdrop">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal__btn-close">Close</button>
       </div>
-    </div>-->
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>

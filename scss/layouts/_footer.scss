@@ -1,9 +1,23 @@
 .footer {
-  padding-top: 94px;
+  margin-top: 94px;
+  position: relative;
   padding: 56px 0;
   background-color: var(--color-primary-dark-blue);
   background-image: url('../../images/footer-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    content: '';
+    background-image: url('../../images/bottles-photo.png');
+    width: 278px;
+    height: 213px;
+  }
   &__container {
     display: flex;
     gap: 20px;
@@ -39,6 +53,7 @@
     text-decoration: none;
     font-size: 16px;
     font-style: normal;
+    padding-top: 16px;
   }
 
   &__copyright {
@@ -46,7 +61,11 @@
     font-size: 13px;
     font-style: normal;
   }
-  &__socials-icon {
+  &__social-icons {
+    display: flex;
+    padding-top: 16px;
+  }
+  &__social-icon {
     fill: var(--color-primary-white);
     background-color: transparent;
   }
