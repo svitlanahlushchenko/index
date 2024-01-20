@@ -1,4 +1,5 @@
 .hero-section {
+  padding-top: 120px;
   background-image: linear-gradient(
       89deg,
       #fff 30.62%,
@@ -11,6 +12,10 @@
   background-position: right top;
   background-size: cover;
 
+  &__name {
+    padding: 16px;
+    margin-bottom: 0;
+  }
   &__title {
     color: var(--color-primary-light-blue);
     text-transform: capitalize;
@@ -18,12 +23,10 @@
     font-size: 140px;
     font-weight: 700;
     line-height: 0.8;
-    padding-top: 16px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+    padding-top: 0;
   }
-  &__name {
-    padding-top: 125px;
-  }
+
   &__text {
     font-size: 12px;
     font-weight: 600;

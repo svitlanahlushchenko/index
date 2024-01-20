@@ -37,8 +37,11 @@
       #011c44 101.39%
     );
     border-radius: 4px 120px;
-
     overflow: hidden;
+    transition: transform 0.3s;
+  }
+  &__item:hover {
+    transform: scale(1.05);
   }
   &__image {
     position: absolute;
