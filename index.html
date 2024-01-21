@@ -68,14 +68,19 @@
     <main>
       <section class="hero-section">
         <div class="container">
-          <p class="hero-section__name">Косметологічна клініка</p>
-          <h1 class="hero-section__title">Beauty Zone</h1>
-          <button class="button modal__btn-open" type="button">
-            Замовити дзвінок
-          </button>
-          <p class="hero-section__text">
-            Запишись та отримай безкоштовну консультацію нашого косметолога
-          </p>
+          <div class="hero-section__container">
+            <p class="hero-section__name">Косметологічна клініка</p>
+            <h1 class="hero-section__title">
+              Beauty <br />
+              Zone
+            </h1>
+            <button class="button modal__btn-open" type="button">
+              Замовити дзвінок
+            </button>
+            <p class="hero-section__text">
+              Запишись та отримай безкоштовну консультацію нашого косметолога
+            </p>
+          </div>
         </div>
       </section>
 
@@ -168,7 +173,8 @@
       <section class="procedure-section" id="procedure-section">
         <div class="container">
           <h2 class="procedure-section__title">
-            Наші <span class="procedure-section__title-accent">процедури</span>
+            Наші
+            <span class="procedure-section__title-accent">процедури</span>
           </h2>
           <div class="procedure-section__slider">
             <button class="carousel-button" type="button">
@@ -228,14 +234,76 @@
           <h2 class="contact-section__title">
             Як нас <span class="contact-section__title-accent">знайти</span>
           </h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325734713493!2d30.515600376297108!3d50.44235657159065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2ssk!4v1703528954611!5m2!1sru!2ssk"
-            width="605"
-            height="481"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contact-section__container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325734713493!2d30.515600376297108!3d50.44235657159065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2ssk!4v1703528954611!5m2!1sru!2ssk"
+              width="605"
+              height="481"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="contact-section__form">
+              <p class="contact-section__invite">
+                Запишіться
+                <span class="contact-section__invite-accent">безкоштовно</span>
+                та отримайте подарунок
+              </p>
+              <form name="contact-form" autocomplete="on" novalidate>
+                <div class="contact-form__field">
+                  <label
+                    class="contact-form__label visually-hidden"
+                    for="user-name"
+                    >Ваше ім'я та прізвище</label
+                  >
+                  <input
+                    class="contact-form__input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Ваше ім'я та прізвище"
+                  />
+                </div>
+                <div class="contact-form__field">
+                  <label
+                    class="contact-form__label visually-hidden"
+                    for="user-tel"
+                    >Ваш номер телефону</label
+                  >
+                  <input
+                    class="contact-form__input"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Ваш номер телефону"
+                  />
+                </div>
+                <div class="contact-form__field">
+                  <label
+                    class="contact-form__label visually-hidden"
+                    for="user-email"
+                    >Ваша електронна пошта</label
+                  >
+                  <input
+                    class="contact-form__input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Ваша електронна пошта"
+                  />
+                </div>
+              </form>
+              <button class="button" type="submit">
+                Записатись безкоштовно
+              </button>
+              <p class="contact-section__terms">
+                Натискаючи на кнопку я погоджуюсь
+                <a class="contact-section__terms" href="#">
+                  з політикою конфіденційності</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -326,7 +394,63 @@
 
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button type="button" class="modal__btn-close">Close</button>
+        <button type="button" class="modal__btn-close">
+          <svg width="32" height="32">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="modal__container">
+          <h2 class="modal__title">Замовити дзвінок</h2>
+          <p class="modal__invite">
+            Запишіться <span class="modal__invite-accent">безкоштовно</span> та
+            отримайте подарунок
+          </p>
+          <form name="contact-form" autocomplete="on" novalidate>
+            <div class="contact-form__field">
+              <label class="contact-form__label visually-hidden" for="user-name"
+                >Ваше ім'я та прізвище</label
+              >
+              <input
+                class="contact-form__input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                placeholder="Ваше ім'я та прізвище"
+              />
+            </div>
+            <div class="contact-form__field">
+              <label class="contact-form__label visually-hidden" for="user-tel"
+                >Ваш номер телефону</label
+              >
+              <input
+                class="contact-form__input"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                placeholder="Ваш номер телефону"
+              />
+            </div>
+            <div class="contact-form__field">
+              <label
+                class="contact-form__label visually-hidden"
+                for="user-email"
+                >Ваша електронна пошта</label
+              >
+              <input
+                class="contact-form__input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Ваша електронна пошта"
+              />
+            </div>
+          </form>
+          <button class="button" type="submit">Записатись безкоштовно</button>
+          <p class="modal__terms">
+            Натискаючи на кнопку я погоджуюсь
+            <a class="modal__terms" href="#"> з політикою конфіденційності</a>
+          </p>
+        </div>
       </div>
     </div>
 
